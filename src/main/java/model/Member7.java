@@ -3,16 +3,7 @@ package model;
 import java.io.Serializable;
 import java.sql.Date;
 
-/**
- * Thành viên hệ thống (theo sơ đồ thiết kế):
- * - ID : integer
- * - username : String
- * - password : String
- * - name : String
- * - Dob : Date
- * - Email : String
- * - Phone : String
- */
+
 public class Member7 implements Serializable {
     private static final long serialVersionUID = 1L;
 

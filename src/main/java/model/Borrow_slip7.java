@@ -7,14 +7,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
-/**
- * Phiếu mượn (theo sơ đồ thiết kế):
- * - ID : integer
- * - borrowDate : Date
- * - dueDate : Date
- * - borrowslipdetail : Borrow_slip_detail7[]
- * - reader : Reader7
- */
 public class Borrow_slip7 implements Serializable {
     private static final long serialVersionUID = 1L;
 

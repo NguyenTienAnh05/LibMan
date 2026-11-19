@@ -1,6 +1,5 @@
 package model;
 
-/** Nhà xuất bản. */
 public class Publisher7 {
     private int ID;
     private String publishName;

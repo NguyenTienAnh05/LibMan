@@ -2,13 +2,7 @@ package model;
 
 import java.io.Serializable;
 
-/**
- * Tài liệu nhập (theo sơ đồ thiết kế):
- * - ID : integer
- * - Quantity : integer
- * - supplier : Supplier7
- * - document : Document7
- */
+
 public class Imported_document7 implements Serializable {
     private static final long serialVersionUID = 1L;
 

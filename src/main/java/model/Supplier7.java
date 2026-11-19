@@ -2,14 +2,6 @@ package model;
 
 import java.io.Serializable;
 
-/**
- * Nhà cung cấp (theo sơ đồ thiết kế):
- * - ID : integer
- * - supplierName : String
- * - Address : String
- * - supplierPhone : String
- * - supplierEmail : String
- */
 public class Supplier7 implements Serializable {
     private static final long serialVersionUID = 1L;
 

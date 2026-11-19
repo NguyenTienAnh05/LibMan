@@ -4,11 +4,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Chi tiết phiếu mượn (theo sơ đồ thiết kế):
- * - ID : integer
- * - imported_document : Imported_document7
- */
+
 public class Borrow_slip_detail7 implements Serializable {
     private static final long serialVersionUID = 1L;
 

@@ -14,12 +14,6 @@ import model.Imported_document7;
 import model.Loaned_document_stat7;
 import model.Reader7;
 
-/**
- * DAO cho modul thống kê tài liệu theo số lần mượn (theo sơ đồ thiết kế):
- * + StatisticDAO7()
- * + getLoanedDocuments(StartDate : date, EndDate : date) : Loaned_document_stat7[]
- * + getLoanHistory(...)
- */
 public class StatisticDAO7 extends DAO7 {
 
     public StatisticDAO7() {

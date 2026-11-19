@@ -1,6 +1,6 @@
 package model;
 
-/** Chi tiết phiếu trả: chứa chi tiết phiếu mượn tương ứng. */
+
 public class Return_slip_detail7 {
     private int ID;
     private Borrow_slip_detail7 borrowDetail;

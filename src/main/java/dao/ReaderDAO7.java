@@ -6,7 +6,6 @@ import java.sql.SQLException;
 
 import model.Reader7;
 
-/** DAO cho bạn đọc (modul đăng kí thẻ bạn đọc). */
 public class ReaderDAO7 extends DAO7 {
 
     public ReaderDAO7() {

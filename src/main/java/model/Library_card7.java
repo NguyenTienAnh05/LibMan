@@ -2,7 +2,6 @@ package model;
 
 import java.sql.Date;
 
-/** Thẻ bạn đọc. */
 public class Library_card7 {
     private int ID;
     private Date issueDate;

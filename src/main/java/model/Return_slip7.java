@@ -4,7 +4,6 @@ import java.sql.Date;
 import java.util.ArrayList;
 import java.util.List;
 
-/** Phiếu trả: thuộc về một bạn đọc, chứa các chi tiết phiếu trả. */
 public class Return_slip7 {
     private int ID;
     private Date returnDate;

@@ -1,8 +1,6 @@
 package model;
 
-/**
- * Bạn đọc (theo sơ đồ thiết kế): kế thừa Member7.
- */
+
 public class Reader7 extends Member7 {
     private static final long serialVersionUID = 1L;
 

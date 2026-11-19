@@ -2,7 +2,6 @@ package model;
 
 import java.sql.Date;
 
-/** Phiếu phạt: ghi nhận một chi tiết phiếu trả bị trả muộn. */
 public class Penalty_slip7 {
     private int ID;
     private Date penaltyDate;

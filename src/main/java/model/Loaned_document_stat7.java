@@ -4,11 +4,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Thống kê tài liệu theo số lần mượn (theo sơ đồ thiết kế):
- * - loanCount : int
- * - loaned_document : Borrow_slip_detail7
- */
+
 public class Loaned_document_stat7 implements Serializable {
     private static final long serialVersionUID = 1L;
 
