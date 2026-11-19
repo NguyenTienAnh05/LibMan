@@ -1,0 +1,88 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "1. Build WAR (mvnw)",
+            "type": "shell",
+            "command": ".\\mvnw.cmd clean package -DskipTests",
+            "group": "build",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "problemMatcher": "$javac"
+        },
+        {
+            "label": "2. Deploy to Tomcat",
+            "type": "shell",
+            "command": "copy /Y \"target\\LibMan.war\" \"C:\\Tools\\apache-tomcat-9.0.124\\webapps\\LibMan.war\"",
+            "group": "none",
+            "dependsOn": "1. Build WAR (mvnw)",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "3. Start Tomcat",
+            "type": "shell",
+            "command": "${workspaceFolder}\\tomcat-debug.bat",
+            "group": "none",
+            "isBackground": true,
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "problemMatcher": {
+                "pattern": {
+                    "regexp": "."
+                },
+                "background": {
+                    "activeOnStart": true,
+                    "beginsPattern": ".",
+                    "endsPattern": "Server startup in"
+                }
+            }
+        },
+        {
+            "label": "4. Stop Tomcat",
+            "type": "shell",
+            "command": "C:\\Tools\\apache-tomcat-9.0.124\\bin\\shutdown.bat",
+            "group": "none",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "5. Open LibMan in browser",
+            "type": "shell",
+            "command": "cmd",
+            "args": [
+                "/c",
+                "start",
+                "",
+                "http://127.0.0.1:8080/LibMan/"
+            ],
+            "group": "none",
+            "problemMatcher": []
+        },
+        {
+            "label": "Build + Deploy + Start",
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "1. Build WAR (mvnw)",
+                "2. Deploy to Tomcat",
+                "3. Start Tomcat",
+                "5. Open LibMan in browser"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        }
+    ]
+}

@@ -1,0 +1,6 @@
+target/
+.mvn/wrapper/maven-wrapper.jar
+*.class
+*.war
+*.jar
+!src/main/webapp/WEB-INF/lib/mysql-connector-j-8.3.0.jar

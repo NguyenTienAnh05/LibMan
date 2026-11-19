@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
+    <display-name>qlThuVien</display-name>
+
+    <welcome-file-list>
+        <welcome-file>login.jsp</welcome-file>
+    </welcome-file-list>
+
+    <!-- Modul đăng kí thẻ bạn đọc -->
+    <servlet>
+        <servlet-name>RegisterServlet7</servlet-name>
+        <servlet-class>servlet.RegisterServlet7</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterServlet7</servlet-name>
+        <url-pattern>/dangkithe</url-pattern>
+    </servlet-mapping>
+
+    <!-- Modul thống kê tài liệu theo số lần mượn -->
+    <servlet>
+        <servlet-name>StatisticServlet7</servlet-name>
+        <servlet-class>servlet.StatisticServlet7</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StatisticServlet7</servlet-name>
+        <url-pattern>/thongke</url-pattern>
+    </servlet-mapping>
+
+    <session-config>
+        <session-timeout>30</session-timeout>
+    </session-config>
+
+    <jsp-config>
+        <jsp-property-group>
+            <url-pattern>*.jsp</url-pattern>
+            <page-encoding>UTF-8</page-encoding>
+        </jsp-property-group>
+    </jsp-config>
+</web-app>

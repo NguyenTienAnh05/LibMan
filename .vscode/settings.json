@@ -1,0 +1,16 @@
+{
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.jdt.ls.java.home": "C:\\Program Files\\Microsoft\\jdk-25.0.5.21-hotspot",
+    "java.compile.nullAnalysis.mode": "disabled",
+    "java.server.launchMode": "Standard",
+    "maven.executable.path": "",
+    "maven.terminal.useJavaHome": true,
+    "java.import.maven.enabled": true,
+    "java.project.sourcePaths": ["src/main/java"],
+    "java.project.outputPath": "target/classes",
+    "files.encoding": "utf8",
+    "editor.formatOnSave": false,
+    "[java]": {
+        "editor.defaultFormatter": "redhat.java"
+    }
+}
