@@ -22,7 +22,7 @@ Mở `src/main/java/dao/DAO7.java` và chỉnh các hằng số `DB_URL`, `DB_US
 1. Mở thư mục gốc của dự án trong VS Code.
 2. Nhấn **Ctrl + Shift + B** và chọn tác vụ **Build + Deploy + Start**.
 3. Tác vụ sẽ đóng gói WAR bằng Maven Wrapper, sao chép WAR vào thư mục `webapps` của Tomcat rồi khởi động Tomcat.
-4. Mở [http://localhost:8080/LibMan_final/](http://localhost:8080/). Trang đăng nhập là `login.jsp`.
+4. Mở [http://localhost:8080/LibMan/](http://localhost:8080/). Trang đăng nhập là `login.jsp`.
 
 Để chỉ biên dịch và đóng gói, chạy tác vụ **1. Build WAR (mvnw)**. Có thể chạy lệnh tương đương trong Terminal:
 
