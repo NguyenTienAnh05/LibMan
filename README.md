@@ -9,7 +9,7 @@ Cài đặt hoặc chuẩn bị sẵn:
 - JDK 25.
 - MySQL Server và cơ sở dữ liệu `libman` đã được tạo, nạp dữ liệu.
 - Apache Tomcat 9.
-- VS Code cùng các tiện ích **Extension Pack for Java** và **Community Server Connectors** (hoặc **Tomcat for Java**).
+- VS Code cùng các tiện ích **Extension Pack for Java** và **Community Server Connectors**.
 
 Các tác vụ VS Code hiện được cấu hình cho JDK tại `C:\Program Files\Microsoft\jdk-25.0.5.21-hotspot` và Tomcat tại `C:\Tools\apache-tomcat-9.0.124`. Nếu cài ở vị trí khác, cập nhật `.vscode/settings.json`, `.vscode/tasks.json` và `tomcat-debug.bat`.
 
@@ -22,7 +22,7 @@ Mở `src/main/java/dao/DAO7.java` và chỉnh các hằng số `DB_URL`, `DB_US
 1. Mở thư mục gốc của dự án trong VS Code.
 2. Nhấn **Ctrl + Shift + B** và chọn tác vụ **Build + Deploy + Start**.
 3. Tác vụ sẽ đóng gói WAR bằng Maven Wrapper, sao chép WAR vào thư mục `webapps` của Tomcat rồi khởi động Tomcat.
-4. Mở [http://localhost:8080/LibMan_final/](http://localhost:8080/LibMan_final/). Trang đăng nhập là `login.jsp`.
+4. Mở [http://localhost:8080/LibMan_final/](http://localhost:8080/). Trang đăng nhập là `login.jsp`.
 
 Để chỉ biên dịch và đóng gói, chạy tác vụ **1. Build WAR (mvnw)**. Có thể chạy lệnh tương đương trong Terminal:
 
